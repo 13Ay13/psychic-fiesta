@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<style type="text/css">
+			.tmain{
+
+			}
+			.tcol{
+				width: 20px;
+				height: 20px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+	
+		<h3>Enter the Grid Details</h3>
+		<label> Number of Rows </label>
+		<input id="rows" type="text" name="rows">
+
+		<label> Number of Coloums </label>
+		<input id="cols" type="text" name="cols">
+
+		<input id="reset" type="reset" value="Clear">
+		<button id="submit" onclick="getData();" > Submit </button>
+
+		<table id="grid" border='1'>
+
+		</table>
+		
+		<h4>Select Start Pixel Status : <span id="status">No</span> </h4>
+		<button id="select" onclick="enablePicker()"> Click </button>
+
+		<button id="fill" onclick="startFill()"> Start Filling </button>
+		
+		<script src="boundaryfill.js"></script>
+
+	</body>
+</html>
