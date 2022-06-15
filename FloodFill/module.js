@@ -1,6 +1,7 @@
 function getPixel(imageData, x, y) {
     if (x < 0 || y < 0 || x >= imageData.width || y >= imageData.height) {
-      return [-1, -1, -1, -1];  // impossible color
+      // return [-1, -1, -1, -1];  // impossible color
+      return
     } else {
       const offset = (y * imageData.width + x) * 4;
       return imageData.data.slice(offset, offset + 4);

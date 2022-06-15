@@ -5,7 +5,6 @@ import { setPixel, getPixel, colorsMatch } from './module.js'
 function floodFill(ctx, x, y, fillColor) {
   // read the pixels in the canvas
   const imageData = ctx.getImageData(0, 0, ctx.canvas.width, ctx.canvas.height);
-  
   // get the color we're filling
   const targetColor = getPixel(imageData, x, y);
   
